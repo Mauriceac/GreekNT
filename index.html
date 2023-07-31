@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bible Verse Fetcher</title>
+</head>
+
+<body>
+    <h1>Bible Verse Fetcher</h1>
+    <div class="main_panel">
+        <form id="dialogBox">
+            <label for="bookInput">Select a NT book:</label>
+            <select id="bookInput" title="NT books">
+                <option value="none">Select a book</option>
+            </select>
+            <br />
+            <br />
+            <label for="chapterInput">Chapter:</label>
+            <select id="chapterInput" disabled>
+                <option value="none">Select a chapter</option>
+            </select>
+            <label for="verseInput">Verse:</label>
+            <select id="verseInput" disabled>
+                <option value="none">Select a verse</option>
+            </select>
+            <br />
+            <br />
+            <button type="submit" id="fetchButton">Fetch Verse</button>
+        </form>
+        <h2>Verse Content:</h2>
+        <p id="verseOutput" class="verse-text"></p>
+        <h2>Translation:</h2>
+        <p id="translationOutput"></p>
+    </div>
+    <div class="dictionary">
+        <h2>Dictionary:</h2>
+        <p id="definition"></p>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="fetchVerse.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="select.js"></script>
+</body>
+
+</html>
